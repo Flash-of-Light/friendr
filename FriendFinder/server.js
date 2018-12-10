@@ -14,7 +14,7 @@ app.use(express.json());
 // require("./app/data/friends.js")(app);
 
 //require my routing pages
-// require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 app.listen(PORT, function() {
