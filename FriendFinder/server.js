@@ -10,9 +10,6 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// require my data page 
-// require("./app/data/friends.js")(app);
-
 //require my routing pages
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
